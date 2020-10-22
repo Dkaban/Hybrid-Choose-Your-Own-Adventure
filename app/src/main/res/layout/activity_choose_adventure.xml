@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ChooseAdventureActivity"
+    android:weightSum="2">
+
+    <LinearLayout
+        android:id="@+id/linearLayout_mainMenuText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_weight="1.25"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/text_mainMenuHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_chooseAdventureHeader"
+            android:textSize="30sp"
+            android:textColor="#3CABFF"
+            android:gravity="center"
+            android:layout_weight="0.5"/>
+
+        <TextView
+            android:id="@+id/text_adventureDialogue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_adventureDialogue"
+            android:textSize="30sp"
+            android:textColor="#3CABFF"
+            android:gravity="center"
+            android:layout_weight="1.5"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_mainMenuButtons"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_weight="0.75">
+
+        <Button
+            android:id="@+id/button_option1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textColor="#3CABFF"
+            android:onClick="onClickAdventureOption"/>
+
+        <Button
+            android:id="@+id/button_option2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textColor="#3CABFF"
+            android:onClick="onClickAdventureOption"/>
+
+        <Button
+            android:id="@+id/button_option3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textColor="#3CABFF"
+            android:onClick="onClickAdventureOption"/>
+
+    </LinearLayout>
+
+</LinearLayout>

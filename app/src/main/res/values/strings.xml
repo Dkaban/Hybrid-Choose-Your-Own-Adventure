@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">HybridYourOwnAdventure</string>
+
+    //Main Menu Strings
+    <string name="text_mainMenuHeader">Main Menu</string>
+    <string name="button_playGame">Play Game</string>
+    <string name="button_options">Options</string>
+    <string name="button_leaderBoards">LeaderBoards</string>
+
+    //Choose Adventure Strings
+    <string name="text_chooseAdventureHeader">Choose Adventure</string>
+    <string name="text_adventureDialogue">Adventure Dialogue? Choose what you want to do. Option 1, 2, or 3.</string>
+</resources>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:weightSum="2">
+
+    <LinearLayout
+        android:id="@+id/linearLayout_mainMenuText"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_weight="0.5">
+
+    <TextView
+        android:id="@+id/text_mainMenuHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text_mainMenuHeader"
+        android:textSize="30sp"
+        android:textColor="#3CABFF"
+        android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_mainMenuButtons"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_weight="1.5">
+
+        <Button
+            android:id="@+id/button_playGame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_playGame"
+            android:textSize="30sp"
+            android:textColor="#3CABFF"
+            android:onClick="onClickMenuOption"/>
+
+        <Button
+            android:id="@+id/button_options"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_options"
+            android:textSize="30sp"
+            android:textColor="#3CABFF"
+            android:onClick="onClickMenuOption"/>
+
+        <Button
+            android:id="@+id/button_leaderboards"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_leaderBoards"
+            android:textSize="30sp"
+            android:textColor="#3CABFF"
+            android:onClick="onClickMenuOption"/>
+
+    </LinearLayout>
+
+</LinearLayout>
