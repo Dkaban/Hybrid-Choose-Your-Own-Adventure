@@ -19,10 +19,11 @@
     <TextView
         android:id="@+id/text_mainMenuHeader"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:text="@string/text_mainMenuHeader"
         android:textSize="30sp"
-        android:textColor="#3CABFF"
+        android:textColor="@color/brown_medium"
+        android:background="@color/yellow_darker"
         android:gravity="center"/>
 
     </LinearLayout>
@@ -33,34 +34,32 @@
         android:layout_height="0dp"
         android:orientation="vertical"
         android:layout_gravity="center"
-        android:layout_weight="1.5">
+        android:layout_weight="1.5"
+        android:background="@color/yellow_medium">
 
         <Button
             android:id="@+id/button_playGame"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/button_playGame"
-            android:textSize="30sp"
-            android:textColor="#3CABFF"
-            android:onClick="onClickMenuOption"/>
+            android:onClick="onClickMenuOption"
+            style="@style/ButtonStyle_darkText_LightButton"/>
 
         <Button
             android:id="@+id/button_options"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/button_options"
-            android:textSize="30sp"
-            android:textColor="#3CABFF"
-            android:onClick="onClickMenuOption"/>
+            android:onClick="onClickMenuOption"
+            style="@style/ButtonStyle_darkText_LightButton"/>
 
         <Button
             android:id="@+id/button_leaderboards"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/button_leaderBoards"
-            android:textSize="30sp"
-            android:textColor="#3CABFF"
-            android:onClick="onClickMenuOption"/>
+            android:onClick="onClickMenuOption"
+            style="@style/ButtonStyle_darkText_LightButton"/>
 
     </LinearLayout>
 

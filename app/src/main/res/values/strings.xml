@@ -10,4 +10,9 @@
     //Choose Adventure Strings
     <string name="text_chooseAdventureHeader">Choose Adventure</string>
     <string name="text_adventureDialogue">Adventure Dialogue? Choose what you want to do. Option 1, 2, or 3.</string>
+
+    <string name="text_dialogue1">(A) You are a knight on a mission to save your Grandfather.</string>
+    <string name="button_option1">Option 1</string>
+    <string name="button_option2">Option 2</string>
+    <string name="button_option3">Option 3</string>
 </resources>

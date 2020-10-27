@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".ChooseAdventureActivity"
-    android:weightSum="2">
+    android:weightSum="2"
+>
 
     <LinearLayout
         android:id="@+id/linearLayout_mainMenuText"
@@ -23,9 +24,10 @@
             android:layout_height="wrap_content"
             android:text="@string/text_chooseAdventureHeader"
             android:textSize="30sp"
-            android:textColor="#3CABFF"
+            android:textColor="@color/brown_medium"
+            android:background="@color/yellow_lighter"
             android:gravity="center"
-            android:layout_weight="0.5"/>
+            android:layout_weight="0.5" />
 
         <TextView
             android:id="@+id/text_adventureDialogue"
@@ -33,7 +35,8 @@
             android:layout_height="wrap_content"
             android:text="@string/text_adventureDialogue"
             android:textSize="30sp"
-            android:textColor="#3CABFF"
+            android:textColor="@color/brown_medium"
+            android:background="@color/yellow_darker"
             android:gravity="center"
             android:layout_weight="1.5"/>
 
@@ -45,31 +48,32 @@
         android:layout_height="0dp"
         android:orientation="vertical"
         android:layout_gravity="center"
-        android:layout_weight="0.75">
+        android:layout_weight="0.75"
+        android:background="@color/yellow_lighter">
 
         <Button
             android:id="@+id/button_option1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:textColor="#3CABFF"
-            android:onClick="onClickAdventureOption"/>
+            style="@style/ButtonStyle_darkText_LightButton"
+            android:onClick="onClickAdventureOption"
+            android:text="@string/button_option1"/>
 
         <Button
             android:id="@+id/button_option2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:textColor="#3CABFF"
-            android:onClick="onClickAdventureOption"/>
+            style="@style/ButtonStyle_darkText_LightButton"
+            android:onClick="onClickAdventureOption"
+            android:text="@string/button_option2"/>
 
         <Button
             android:id="@+id/button_option3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:textColor="#3CABFF"
-            android:onClick="onClickAdventureOption"/>
+            style="@style/ButtonStyle_darkText_LightButton"
+            android:onClick="onClickAdventureOption"
+            android:text="@string/button_option3" />
 
     </LinearLayout>
 
