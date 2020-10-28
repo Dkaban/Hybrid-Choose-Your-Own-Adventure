@@ -15,4 +15,12 @@
     <string name="button_option1">Option 1</string>
     <string name="button_option2">Option 2</string>
     <string name="button_option3">Option 3</string>
+
+    <string name="text_leaderBoardHeader">Header of Stats</string>
+    <string name="text_leaderBoardFooter">Footer of Stats</string>
+
+    <string name="text_optionsHeader">Options Header</string>
+    <string name="button_muteAudio">Mute Audio</string>
+    <string name="button_clearSavedData">Clear Saved Data</string>
+    <string name="text_optionsFooter">Options Footer</string>
 </resources>

@@ -1,9 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".OptionsActivity">
+    android:orientation="vertical"
+    tools:context=".OptionsActivity"
+    android:weightSum="4"
+    android:background="@color/yellow_darker">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/text_optionsHeader"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="@string/text_optionsHeader"
+        android:textSize="30sp"
+        android:textColor="@color/brown_medium"
+        android:background="@color/yellow_lighter"
+        android:gravity="center"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/button_muteAudio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ButtonStyle_darkText_LightButton"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/button_muteAudio"
+        android:onClick="onClickMuteAudio" />
+
+    <Button
+        android:id="@+id/button_clearSavedData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ButtonStyle_darkText_LightButton"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/button_clearSavedData"
+        android:onClick="onClickClearSavedData" />
+
+    <TextView
+        android:id="@+id/text_optionsFooter"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="@string/text_optionsFooter"
+        android:textSize="30sp"
+        android:textColor="@color/brown_medium"
+        android:background="@color/yellow_lighter"
+        android:gravity="center"
+        android:layout_weight="1"/>
+
+</LinearLayout>
