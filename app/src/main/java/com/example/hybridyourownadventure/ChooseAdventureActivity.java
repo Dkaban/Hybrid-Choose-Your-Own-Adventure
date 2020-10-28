@@ -132,12 +132,20 @@ public class ChooseAdventureActivity extends AppCompatActivity
 
     private void setDialogueOptionIdexes()
     {
+        //CODES: 1000 = Play Game 1, 999 = Restart Game, 998 = LeaderBoards
         //TODO: Create better ways to detecting game end or changing games
-        dialogueList.get(0).setOptionIndexes(1,2);
-        dialogueList.get(1).setOptionIndexes(3,5);
-        dialogueList.get(2).setOptionIndexes(7,6);
-        dialogueList.get(3).setOptionIndexes(4,1000); //500 being GAME1
-        dialogueList.get(4).setOptionIndexes(999,999); //999 is for GAME END
+        dialogueList.get(0).setOptionIndexes(1,2);//Go to Tavern or Go to Inn
+        dialogueList.get(1).setOptionIndexes(3,5);//Approach Bartender or Approach Piano Player
+        dialogueList.get(2).setOptionIndexes(7,6);//Talk to Innkeeper or Talk to Guests
+        dialogueList.get(3).setOptionIndexes(4,1000); //DIE or Play a Game (1000 being GAME1)
+        dialogueList.get(4).setOptionIndexes(999,998); //Restart or Go to LeaderBoards
+        dialogueList.get(5).setOptionIndexes(1000,1);//Play game or Go To Tavern
+        dialogueList.get(6).setOptionIndexes(9,8);//Chicken or Beef
+        dialogueList.get(7).setOptionIndexes(1000,0);//Play game or No, restart
+        dialogueList.get(8).setOptionIndexes(9,1000);//Chicken or Play Game
+        dialogueList.get(9).setOptionIndexes(999,998);//Restart or Go to LeaderBoards
+        dialogueList.get(10).setOptionIndexes(999,998);//Restart or Go to LeaderBoards
+        //dialogueList.get(11).setOptionIndexes(999,998); // WIN A GAME, NOT SURE YET
     }
 }
 
