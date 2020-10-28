@@ -1,5 +1,13 @@
-package com.example.hybridyourownadventure;
+/**
+ * Author: Dustin Kaban
+ * StudentID: T00663749
+ *
+ * Class: OptionsActivity.java
+ *
+ * //TODO: WRITE A DESCRIPTION FOR THIS CLASS
+ */
 
+package com.example.hybridyourownadventure;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;

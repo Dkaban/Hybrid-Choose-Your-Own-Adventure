@@ -6,8 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".ChooseAdventureActivity"
-    android:weightSum="2"
->
+    android:weightSum="2">
 
     <LinearLayout
         android:id="@+id/linearLayout_mainMenuText"
@@ -66,14 +65,6 @@
             style="@style/ButtonStyle_darkText_LightButton"
             android:onClick="onClickAdventureOption"
             android:text="@string/button_option2"/>
-
-        <Button
-            android:id="@+id/button_option3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            style="@style/ButtonStyle_darkText_LightButton"
-            android:onClick="onClickAdventureOption"
-            android:text="@string/button_option3" />
 
     </LinearLayout>
 

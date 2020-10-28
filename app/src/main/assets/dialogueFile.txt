@@ -1,12 +1,30 @@
-You are a knight on a mission to save his grandfather
-A
-B
-C
-You see a grocery bag in the distance
-D
-E
-F
-Oh no you went too far
-G
-H
-I
+You arrive in town, Hungry and Tired.
+Go to Tavern
+Go to Inn
+You notice the Tavern is almost completely empty, excetp for a piano player and a bartender.
+Approach Bartender
+Approach Piano Player
+You see a woman behind the desk and a couple guests sitting down.
+Talk to Guests
+Talk to Inn Keeper
+What would you like to do today?
+Play a Game
+Let the bartender make something special for you
+Uh oh, the drink was poisoned! GAME OVER.
+Restart Game
+Check out LeaderBoards
+The piano player abruptly stops.  Would you like to play a game?
+Play a Game
+Go to Tavern
+The guests seem quite angry and ask you if you prefer chicken or beef?
+Chicken
+Beef
+Would you like a room today?
+Yes
+No
+Strange choice.  I wish you went with Chicken, now we must play a game.
+Play a Game
+Actually I wanted Chicken
+The guest does a magical twirl, the likes of which you have never seen before.  They almost appear to glow and POOF.  The guests appear to be a lot taller than before, as you begin to cluck.  You are not a chicken. GAME OVER.
+Restart Game
+Check out LeaderBoards
