@@ -11,6 +11,39 @@ package com.example.hybridyourownadventure;
 
 public class DataHolder
 {
+    private boolean gameOver = false;
     //This will be used to track which dialogue we've left off on
-    public int dialogueIndex = 0;
+    private int currentDialogueIndex = 0;
+
+    public void setCurrentDialogueIndex(int index)
+    {
+        currentDialogueIndex = index;
+    }
+
+    public int getCurrentDialogueIndex()
+    {
+        return currentDialogueIndex;
+    }
+
+    public void setGameOver(boolean gameOverState)
+    {
+        gameOver = gameOverState;
+    }
+
+    public boolean getGameOver()
+    {
+        return gameOver;
+    }
+
+    //Allows for use-ability across activity changes
+    static DataHolder getInstance()
+    {
+        if( instance == null )
+        {
+            instance = new DataHolder();
+        }
+        return instance;
+    }
+
+    private static DataHolder instance;
 }

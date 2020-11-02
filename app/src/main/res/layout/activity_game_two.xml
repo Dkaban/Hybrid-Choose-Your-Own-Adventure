@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GameTwoActivity"
+    android:weightSum="3">
+
+    <LinearLayout
+        android:id="@+id/linearLayout_headerGameTwo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_weight="0.5"
+        android:background="@color/yellow_darker">
+
+        <TextView
+            android:id="@+id/text_headerGameTwo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/text_headerGameTwo"
+            android:textSize="30sp"
+            android:textColor="@color/brown_medium"
+            android:background="@color/yellow_darker"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_gameTwoMainArea"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_weight="2"
+        android:background="@color/yellow_medium">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_footerGameTwo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_weight="0.5"
+        android:background="@color/yellow_darker">
+
+        <TextView
+            android:id="@+id/text_footerGameOne"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/text_footerGameTwo"
+            android:textSize="30sp"
+            android:textColor="@color/brown_medium"
+            android:background="@color/yellow_darker"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

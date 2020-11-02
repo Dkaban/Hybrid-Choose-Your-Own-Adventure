@@ -28,3 +28,57 @@ Actually I wanted Chicken
 The guest does a magical twirl, the likes of which you have never seen before.  They almost appear to glow and POOF.  The guests appear to be a lot taller than before, as you begin to cluck.  You are not a chicken. GAME OVER.
 Restart Game
 Check out LeaderBoards
+During the night, a stranger walks into your room.
+Would you like to play a game?
+No, leave me alone!
+The stranger offers you a drink
+take a sip
+Get out of my room.
+You wake up and go outside.
+Go to Tavern
+Go to Inn
+You lost the duel!
+Restart Game
+Check out LeaderBoards
+Success, you won the duel!
+Saddle Up
+Saunter through the middle of town
+You jump on your horse and hear a noise in the distance.
+Go towards the noise
+Yell "hi-yo silver away!"
+People look at you funny, considering you just murdered someone.
+Saddle up
+Yell "hi-yo silver away!"
+You are not on a horse, now you just look silly, but you hear a noise
+Saddle up
+Run towards the noise
+You see a group of bandits pushing around an elderly man
+Start shooting
+Run to cover
+There is too many of them, even more than the ones you saw.
+Restart Game
+Check out LeaderBoards
+You got to cover
+Start Shooting
+Yell at the elderly man to run
+You move with swift justice and take out all the bandits.
+Help the elderly man
+Carefully scout area for bandits
+The elderly man is startled and tells you to get off his lawn.
+Start Shooting
+Run and tackle elderly man
+You defeated all the bandits and the elderly man looks familiar now.
+Talk to elderly man
+Tackle elderly man
+There were still more bandits, you and the elderly man were defeated.
+Restat Game
+Go to LeaderBoards
+You tackled the old man.  He winces, but looks at you, and says, Sunny?
+Grandpa
+Do I know you
+The old man looks familiar
+Grandpa
+Do I know you
+For my fortune, do you want to do a Math problem or a Word problem?
+Math Problem
+Word Problem

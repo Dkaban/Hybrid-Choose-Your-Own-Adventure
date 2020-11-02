@@ -10,17 +10,32 @@
     //Choose Adventure Strings
     <string name="text_chooseAdventureHeader">Choose Adventure</string>
     <string name="text_adventureDialogue">Adventure Dialogue? Choose what you want to do. Option 1, 2, or 3.</string>
-
     <string name="text_dialogue1">(A) You are a knight on a mission to save your Grandfather.</string>
     <string name="button_option1">Option 1</string>
     <string name="button_option2">Option 2</string>
     <string name="button_option3">Option 3</string>
 
+    //LeaderBoard Strings
     <string name="text_leaderBoardHeader">Header of Stats</string>
     <string name="text_leaderBoardFooter">Footer of Stats</string>
 
+    //Options Strings
     <string name="text_optionsHeader">Options Header</string>
     <string name="button_muteAudio">Mute Audio</string>
     <string name="button_clearSavedData">Clear Saved Data</string>
     <string name="text_optionsFooter">Options Footer</string>
+
+    //GameOne Strings
+    <string name="text_headerGameOne">Get Ready to Draw</string>
+    <string name="text_footerGameOne">Duel Time</string>
+    <string name="text_duelButton">Wait For It</string>
+
+    //GameTwo Strings
+    <string name="text_headerGameTwo">GAME ONE HEADER</string>
+    <string name="text_footerGameTwo">GAME TWO FOOTER</string>
+
+    //GameThree Strings
+    <string name="text_headerGameThree">GAME THREE HEADER</string>
+    <string name="text_footerGameThree">GAME THREE FOOTER</string>
+
 </resources>

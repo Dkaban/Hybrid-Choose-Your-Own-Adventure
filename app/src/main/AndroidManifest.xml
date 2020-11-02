@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HybridYourOwnAdventure">
-        <activity android:name=".LeaderBoardActivity"></activity>
+        <activity android:name=".GameThreeActivity"></activity>
+        <activity android:name=".GameTwoActivity" />
+        <activity android:name=".GameOneActivity" />
+        <activity android:name=".LeaderBoardActivity" />
         <activity android:name=".OptionsActivity" />
         <activity android:name=".ChooseAdventureActivity" />
         <activity android:name=".MainActivity">
