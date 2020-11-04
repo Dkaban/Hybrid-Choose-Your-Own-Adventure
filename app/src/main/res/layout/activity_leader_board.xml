@@ -31,7 +31,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:text="@string/text_leaderBoardFooter"
-        android:textSize="30sp"
+        android:textSize="20sp"
         android:textColor="@color/brown_medium"
         android:background="@color/yellow_lighter"
         android:gravity="center"

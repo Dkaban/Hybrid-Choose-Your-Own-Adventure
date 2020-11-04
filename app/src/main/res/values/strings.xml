@@ -16,8 +16,8 @@
     <string name="button_option3">Option 3</string>
 
     //LeaderBoard Strings
-    <string name="text_leaderBoardHeader">Header of Stats</string>
-    <string name="text_leaderBoardFooter">Footer of Stats</string>
+    <string name="text_leaderBoardHeader">Statistics</string>
+    <string name="text_leaderBoardFooter">Thanks for playing!</string>
 
     //Options Strings
     <string name="text_optionsHeader">Options Header</string>
@@ -28,7 +28,7 @@
     //GameOne Strings
     <string name="text_headerGameOne">Get Ready to Draw</string>
     <string name="text_footerGameOne">Duel Time</string>
-    <string name="text_duelButton">Wait For It</string>
+    <string name="text_drawButton">Tap Here when it says Draw</string>
 
     //GameTwo Strings
     <string name="text_headerGameTwo">GAME ONE HEADER</string>

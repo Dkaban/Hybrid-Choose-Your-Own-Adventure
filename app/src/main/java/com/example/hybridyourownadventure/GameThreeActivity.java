@@ -19,4 +19,11 @@ public class GameThreeActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_game_three);
     }
+
+    @Override
+    public void onBackPressed()
+    {
+        //super.onBackPressed();
+        //We want to do nothing here, disabling it helps stop cheating!
+    }
 }

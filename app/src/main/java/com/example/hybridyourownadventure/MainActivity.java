@@ -23,6 +23,21 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
     }
 
+    @Override
+    protected void onStart()
+    {
+        super.onStart();
+
+        //We check to see if the list is empty, we only want to populate it once
+        if(DataHolder.getInstance().dialogueList.isEmpty())
+        {
+            //Populate the dialogue array via a text file
+            DataHolder.getInstance().populateDialogueArray(this);
+            //Assign the dialogue tree values so we know what dialogue takes you where
+            DataHolder.getInstance().setDialogueOptionIndexes();
+        }
+    }
+
     //This method checks to see what button is clicked and changes to the corresponding activity
     public void onClickMenuOption(View view)
     {
