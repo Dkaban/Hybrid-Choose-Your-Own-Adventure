@@ -10,6 +10,9 @@
 package com.example.hybridyourownadventure;
 
 import android.content.Context;
+import android.media.MediaPlayer;
+import android.net.Uri;
+import android.os.Environment;
 
 import java.io.BufferedReader;
 import java.io.IOException;

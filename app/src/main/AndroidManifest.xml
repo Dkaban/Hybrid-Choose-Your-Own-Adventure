@@ -9,7 +9,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HybridYourOwnAdventure">
-        <activity android:name=".GameThreeActivity"></activity>
+        <service
+            android:name=".AudioService"
+            android:enabled="true"
+            android:exported="true"></service>
+
+        <activity android:name=".GameThreeActivity" />
         <activity android:name=".GameTwoActivity" />
         <activity android:name=".GameOneActivity" />
         <activity android:name=".LeaderBoardActivity" />

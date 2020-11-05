@@ -39,11 +39,12 @@
         android:background="@color/yellow_medium">
         
         <Button
+            android:id="@+id/button_drawButton"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             style="@style/ButtonStyle_darkText_LightButton"
-            android:text="@string/text_duelButton"
-            android:textSize="60sp"
+            android:text="@string/text_drawButton"
+            android:textSize="40sp"
             android:onClick="onClickDraw"/>
 
     </LinearLayout>

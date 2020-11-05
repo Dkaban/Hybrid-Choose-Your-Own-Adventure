@@ -10,12 +10,10 @@
 
 package com.example.hybridyourownadventure;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-
 import java.util.ArrayList;
 
 public class LeaderBoardActivity extends AppCompatActivity

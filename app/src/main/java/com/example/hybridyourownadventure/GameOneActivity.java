@@ -1,4 +1,4 @@
-/**
+  /**
  * Author: Dustin Kaban
  * StudentID: T00663749
  *
@@ -58,7 +58,7 @@ public class GameOneActivity extends AppCompatActivity
                     drawButton.setText("DRAW");
                     timeToDraw = true;
                 }
-                else if((millisUntilFinished/1000) <= (randomInterval-3))
+                else if((millisUntilFinished/1000) <= (randomInterval-2))
                 {
                     //If we've exceeded 3 seconds past the random interval, the draw is failed
                     drawButton.setText("Too Late\n(tap here to continue story)");

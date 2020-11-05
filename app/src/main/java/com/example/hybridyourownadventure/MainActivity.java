@@ -4,7 +4,9 @@
  *
  * Class: MainActivity.java
  *
- * //TODO: WRITE A DESCRIPTION FOR THIS CLASS
+ * This class displays the main menu to the user and loads the dialogue from a text file
+ * It also plays the music that loops
+ *
  */
 
 package com.example.hybridyourownadventure;
@@ -12,7 +14,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity
 {
@@ -62,5 +63,15 @@ public class MainActivity extends AppCompatActivity
     {
         Intent activityToStart = new Intent(this,activity);
         startActivity(activityToStart);
+    }
+
+    public void startNewService(View view)
+    {
+        startService(new Intent(this,AudioService.class));
+    }
+
+    public void stopNewService(View view)
+    {
+        stopService(new Intent(this,AudioService.class));
     }
 }
