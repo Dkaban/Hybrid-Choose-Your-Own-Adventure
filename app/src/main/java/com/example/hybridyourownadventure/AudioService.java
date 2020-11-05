@@ -18,23 +18,26 @@ public class AudioService extends Service
 {
     MediaPlayer mpAudio;
 
-    public AudioService()
-    {
-
-    }
-
     @Override
     public void onCreate()
     {
         super.onCreate();
-        mpAudio = MediaPlayer.create(this,R.raw.Song_01);
+        mpAudio = MediaPlayer.create(this,R.raw.song01);
         mpAudio.setLooping(true);
     }
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId)
     {
-
+        mpAudio.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+            @Override
+            public void onPrepared(MediaPlayer mp) {
+                if(mp == mpAudio)
+                {
+                    mpAudio.start();
+                }
+            }
+        });
         return super.onStartCommand(intent, flags, startId);
     }
 
@@ -42,6 +45,8 @@ public class AudioService extends Service
     public void onDestroy()
     {
         super.onDestroy();
+        mpAudio.stop();
+        mpAudio.release();
     }
 
     @Override
@@ -50,6 +55,4 @@ public class AudioService extends Service
         // TODO: Return the communication channel to the service.
         throw new UnsupportedOperationException("Not yet implemented");
     }
-
-
 }

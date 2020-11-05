@@ -10,13 +10,16 @@
  */
 
 package com.example.hybridyourownadventure;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity
 {
+    @RequiresApi(api = Build.VERSION_CODES.Q)
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -63,15 +66,5 @@ public class MainActivity extends AppCompatActivity
     {
         Intent activityToStart = new Intent(this,activity);
         startActivity(activityToStart);
-    }
-
-    public void startNewService(View view)
-    {
-        startService(new Intent(this,AudioService.class));
-    }
-
-    public void stopNewService(View view)
-    {
-        stopService(new Intent(this,AudioService.class));
     }
 }

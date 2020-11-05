@@ -46,6 +46,9 @@ public class ChooseAdventureActivity extends AppCompatActivity
         super.onStart();
         //Initially setting it to be 0 because that will be our default starting dialogue state
         setUIDialogue(DataHolder.getInstance().getCurrentDialogueIndex());
+
+        //Start playing the Audio
+        startAudioService();
     }
 
     public void onClickAdventureOption(View view)
@@ -144,5 +147,23 @@ public class ChooseAdventureActivity extends AppCompatActivity
         sessionsPlayed++;
         editor.putInt(Pref_sessionsPlayed,sessionsPlayed);
         editor.commit();
+    }
+
+    //We want to pause the music when the user closes the app or leaves the game scene
+    @Override
+    protected void onPause()
+    {
+        super.onPause();
+        stopAudioService();
+    }
+
+    public void startAudioService()
+    {
+        startService(new Intent(this,AudioService.class));
+    }
+
+    public void stopAudioService()
+    {
+        stopService(new Intent(this,AudioService.class));
     }
 }
