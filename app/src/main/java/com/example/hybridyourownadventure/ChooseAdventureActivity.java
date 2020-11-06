@@ -27,7 +27,6 @@ public class ChooseAdventureActivity extends AppCompatActivity
     TextView mainDialogueStatementText;
     Button optionOneButton;
     Button optionTwoButton;
-    //Button optionThreeButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -146,7 +145,9 @@ public class ChooseAdventureActivity extends AppCompatActivity
         int sessionsPlayed = sharedPreferences.getInt(Pref_sessionsPlayed,0);
         sessionsPlayed++;
         editor.putInt(Pref_sessionsPlayed,sessionsPlayed);
-        editor.commit();
+        //editor.commit();
+        //TODO: Verify Apply works better than commit
+        editor.apply();
     }
 
     //We want to pause the music when the user closes the app or leaves the game scene

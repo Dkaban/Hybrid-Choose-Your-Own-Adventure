@@ -1,6 +1,11 @@
 <resources>
     <string name="app_name">HybridYourOwnAdventure</string>
 
+    //Splash Screen Strings
+    <string name="text_splashInformation">This story is entirely fiction.  Any relation to real
+        characters are coincidental and not intended by the creator.</string>
+    <string name="text_copyrightInformation">Copyright Dustin Kaban 2020</string>
+
     //Main Menu Strings
     <string name="text_mainMenuHeader">Main Menu</string>
     <string name="button_playGame">Play Game</string>
@@ -37,5 +42,6 @@
     //GameThree Strings
     <string name="text_headerGameThree">GAME THREE HEADER</string>
     <string name="text_footerGameThree">GAME THREE FOOTER</string>
+    <string name="title_activity_splash">SplashActivity</string>
 
 </resources>

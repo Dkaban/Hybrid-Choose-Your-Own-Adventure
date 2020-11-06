@@ -13,25 +13,30 @@ package com.example.hybridyourownadventure;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity
 {
+    private SharedPreferences sharedPreferences;
+    private String PREF_NAME = "FirstPlay";
+    private SharedPreferences.Editor editor;
+
     @RequiresApi(api = Build.VERSION_CODES.Q)
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        sharedPreferences = getSharedPreferences(PREF_NAME,0);
     }
 
     @Override
     protected void onStart()
     {
         super.onStart();
-
         //We check to see if the list is empty, we only want to populate it once
         if(DataHolder.getInstance().dialogueList.isEmpty())
         {
@@ -39,6 +44,13 @@ public class MainActivity extends AppCompatActivity
             DataHolder.getInstance().populateDialogueArray(this);
             //Assign the dialogue tree values so we know what dialogue takes you where
             DataHolder.getInstance().setDialogueOptionIndexes();
+        }
+
+        //If it's the first time we're playing, we want to display the copyright / disclaimer page
+        boolean firstPlay= false;
+        if(!sharedPreferences.getBoolean(PREF_NAME,firstPlay))
+        {
+            loadActivity(SplashActivity.class);
         }
     }
 

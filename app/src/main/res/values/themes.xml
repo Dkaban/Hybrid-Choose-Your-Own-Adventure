@@ -14,11 +14,20 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="ButtonStyle_darkText_LightButton" >
+    <style name="ButtonStyle_darkText_LightButton">
         <item name="android:textSize">30dp</item>
         <item name="android:layout_margin">2dp</item>
         <item name="android:padding">2dp</item>
         <item name="android:textColor">@color/brown_medium</item>
         <item name="android:background">@color/yellow_lighter</item>
     </style>
+
+    <style name="Theme.HybridYourOwnAdventure.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.HybridYourOwnAdventure.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.HybridYourOwnAdventure.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
