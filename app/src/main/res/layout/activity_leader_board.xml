@@ -6,7 +6,38 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".LeaderBoardActivity"
-    android:weightSum="3">
+    android:weightSum="4">
+
+    <LinearLayout
+        android:id="@+id/linearLayout_headerMenuButtons"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_weight="0.5"
+        android:background="@color/yellow_darker">
+
+        <Button
+            android:id="@+id/button_mainMenu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            style="@style/ButtonStyle_darkText_LightButton"
+            android:onClick="onClickMainMenu"
+            android:text="@string/button_mainMenu"
+            android:layout_weight="1"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/button_options"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            style="@style/ButtonStyle_darkText_LightButton"
+            android:onClick="onClickOptions"
+            android:text="@string/button_options"
+            android:layout_weight="1"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/text_leaderBoardHeader"
@@ -23,7 +54,7 @@
         android:id="@+id/listView_playerStats"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_weight="1.5"
         android:background="@color/yellow_darker"/>
 
     <TextView

@@ -1,18 +1,19 @@
 <resources>
     <string name="app_name">HybridYourOwnAdventure</string>
 
-    //Splash Screen Strings
+    <!-- plash Screen Strings -->
     <string name="text_splashInformation">This story is entirely fiction.  Any relation to real
         characters are coincidental and not intended by the creator.</string>
     <string name="text_copyrightInformation">Copyright Dustin Kaban 2020</string>
 
-    //Main Menu Strings
+    <!-- Main Menu Strings -->
     <string name="text_mainMenuHeader">Main Menu</string>
     <string name="button_playGame">Play Game</string>
     <string name="button_options">Options</string>
     <string name="button_leaderBoards">LeaderBoards</string>
 
-    //Choose Adventure Strings
+    <!-- Choose Adventure Strings -->
+    <string name="button_mainMenu">Main Menu</string>
     <string name="text_chooseAdventureHeader">Choose Adventure</string>
     <string name="text_adventureDialogue">Adventure Dialogue? Choose what you want to do. Option 1, 2, or 3.</string>
     <string name="text_dialogue1">(A) You are a knight on a mission to save your Grandfather.</string>
@@ -20,28 +21,35 @@
     <string name="button_option2">Option 2</string>
     <string name="button_option3">Option 3</string>
 
-    //LeaderBoard Strings
+    <!-- LeaderBoard Strings -->
     <string name="text_leaderBoardHeader">Statistics</string>
     <string name="text_leaderBoardFooter">Thanks for playing!</string>
 
-    //Options Strings
-    <string name="text_optionsHeader">Options Header</string>
+    <!-- Options Strings -->
+    <string name="text_optionsHeader">Options</string>
     <string name="button_muteAudio">Mute Audio</string>
     <string name="button_clearSavedData">Clear Saved Data</string>
-    <string name="text_optionsFooter">Options Footer</string>
+    <string name="text_optionsFooter"></string>
 
-    //GameOne Strings
+    <!-- GameOne Strings -->
     <string name="text_headerGameOne">Get Ready to Draw</string>
     <string name="text_footerGameOne">Duel Time</string>
     <string name="text_drawButton">Tap Here when it says Draw</string>
 
-    //GameTwo Strings
-    <string name="text_headerGameTwo">GAME ONE HEADER</string>
-    <string name="text_footerGameTwo">GAME TWO FOOTER</string>
+    <!-- GameTwo (MATH PROBLEM) Strings -->
+    <string name="text_headerGameTwo">Math Problem</string>
+    <string name="text_questionGameTwo">Math Question Here</string>
+    <string name="text_hint_mathEntryAnswers">Enter Answer here...</string>
+    <string name="button_gameTwoAnswerButton">Check Answer</string>
 
-    //GameThree Strings
-    <string name="text_headerGameThree">GAME THREE HEADER</string>
-    <string name="text_footerGameThree">GAME THREE FOOTER</string>
-    <string name="title_activity_splash">SplashActivity</string>
+    <!-- GameThree (WORD PROBLEM) Strings -->
+    <string name="text_headerGameThree">Word Problem</string>
+    <string name="text_questionGameThree">Word Question Here</string>
+    <string name="text_hint_wordEntryAnswers">Enter Answer here...</string>
+    <string name="button_gameThreeAnswerButton">Check Answer</string>
+
+    <!-- EndGame Strings -->
+    <string name="text_endGame">END GAME TEXT</string>
+    <string name="button_endGame">END GAME BUTTON TEXT</string>
 
 </resources>

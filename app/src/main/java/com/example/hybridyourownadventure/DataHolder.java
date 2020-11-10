@@ -7,13 +7,9 @@
  * This class is for maintaining a persistent gameplay session
  * Also saving if the user goes back and returns to the game Activity
  */
+
 package com.example.hybridyourownadventure;
-
 import android.content.Context;
-import android.media.MediaPlayer;
-import android.net.Uri;
-import android.os.Environment;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -24,11 +20,10 @@ public class DataHolder
 {
     //Holds all of the Dialogue inputted from a text file
     public ArrayList<Dialogue> dialogueList = new ArrayList<>();
-    //Keeps track of the game state
-    //TODO: POSSIBLY Erase this? Not sure if we need it anymore.
     private boolean gameOver = false;
     //This will be used to track which dialogue we've left off on
     private int currentDialogueIndex = 0;
+    private boolean audioMuted = false;
 
     public void setCurrentDialogueIndex(int index)
     {
@@ -48,6 +43,25 @@ public class DataHolder
     public boolean getGameOver()
     {
         return gameOver;
+    }
+
+    public void setMuteAudio()
+    {
+        if(audioMuted)
+        {
+            //Un-mute the audio if it is muted
+            audioMuted = false;
+        }
+        else
+        {
+            //Mute the audio if it isn't muted
+            audioMuted = true;
+        }
+    }
+
+    public boolean getMuteAudio()
+    {
+        return audioMuted;
     }
 
     public void populateDialogueArray(Context context)

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".GameTwoActivity"
-    android:weightSum="3">
+    android:weightSum="4">
 
     <LinearLayout
         android:id="@+id/linearLayout_headerGameTwo"
@@ -35,8 +35,35 @@
         android:layout_height="0dp"
         android:orientation="vertical"
         android:layout_gravity="center"
-        android:layout_weight="2"
+        android:layout_weight="2.5"
         android:background="@color/yellow_medium">
+
+        <TextView
+            android:id="@+id/text_questionGameTwo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/text_questionGameTwo"
+            android:textSize="30sp"
+            android:textColor="@color/brown_medium"
+            android:background="@color/yellow_darker"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout_enterMathAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_weight="0.5"
+        android:background="@color/yellow_darker">
+
+        <EditText
+            android:id="@+id/editText_gameTwoAnswerEntry"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/text_hint_mathEntryAnswers"/>
 
     </LinearLayout>
 
@@ -49,15 +76,13 @@
         android:layout_weight="0.5"
         android:background="@color/yellow_darker">
 
-        <TextView
-            android:id="@+id/text_footerGameOne"
+        <Button
+            android:id="@+id/button_gameTwoAnswer"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/text_footerGameTwo"
-            android:textSize="30sp"
-            android:textColor="@color/brown_medium"
-            android:background="@color/yellow_darker"
-            android:gravity="center"/>
+            android:text="@string/button_gameTwoAnswerButton"
+            style="@style/ButtonStyle_darkText_LightButton"
+            android:onClick="onClickAnswer"/>
 
     </LinearLayout>
 

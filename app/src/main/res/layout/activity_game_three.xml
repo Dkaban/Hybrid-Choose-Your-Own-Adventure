@@ -6,61 +6,45 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".GameThreeActivity"
-    android:weightSum="3">
+    android:weightSum="3"
+    android:background="@color/yellow_medium">
 
-    <LinearLayout
-        android:id="@+id/linearLayout_headerGameThree"
+    <TextView
+        android:id="@+id/text_headerGameThree"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:orientation="vertical"
-        android:layout_gravity="center"
-        android:layout_weight="0.5"
-        android:background="@color/yellow_darker">
+        android:text="@string/text_headerGameThree"
+        android:textSize="30sp"
+        android:textColor="@color/brown_medium"
+        android:background="@color/yellow_darker"
+        android:gravity="center"
+        android:layout_weight="0.5"/>
 
-        <TextView
-            android:id="@+id/text_headerGameThree"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/text_headerGameThree"
-            android:textSize="30sp"
-            android:textColor="@color/brown_medium"
-            android:background="@color/yellow_darker"
-            android:gravity="center"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout_gameThreeMainArea"
+    <TextView
+        android:id="@+id/text_questionGameThree"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:orientation="vertical"
-        android:layout_gravity="center"
-        android:layout_weight="2"
-        android:background="@color/yellow_medium">
+        android:text="@string/text_questionGameTwo"
+        android:textSize="30sp"
+        android:textColor="@color/brown_medium"
+        android:background="@color/yellow_darker"
+        android:gravity="center"
+        android:layout_weight="1.5"/>
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout_footerGameThree"
+    <EditText
+        android:id="@+id/editText_gameThreeAnswerEntry"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:orientation="vertical"
-        android:layout_gravity="center"
-        android:layout_weight="0.5"
-        android:background="@color/yellow_darker">
+        android:hint="@string/text_hint_wordEntryAnswers"
+        android:layout_weight="0.5"/>
 
-        <TextView
-            android:id="@+id/text_footerGameOne"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="@string/text_footerGameThree"
-            android:textSize="30sp"
-            android:textColor="@color/brown_medium"
-            android:background="@color/yellow_darker"
-            android:gravity="center"/>
-
-    </LinearLayout>
-
-
+    <Button
+        android:id="@+id/button_gameTwoAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="@string/button_gameThreeAnswerButton"
+        style="@style/ButtonStyle_darkText_LightButton"
+        android:onClick="onClickAnswer"
+        android:layout_weight="0.5"/>
 
 </LinearLayout>

@@ -9,31 +9,47 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HybridYourOwnAdventure">
+        <activity android:name=".EndGameActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.HybridYourOwnAdventure.NoActionBar"/>
         <activity
             android:name=".SplashActivity"
-            android:label="@string/title_activity_splash"
-            android:theme="@style/Theme.HybridYourOwnAdventure.NoActionBar"
-            android:screenOrientation = "portrait"></activity>
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.HybridYourOwnAdventure.NoActionBar" />
 
         <service
             android:name=".AudioService"
             android:enabled="true"
             android:exported="true" />
 
-        <activity android:name=".GameThreeActivity"
-            android:screenOrientation = "portrait"/>
-        <activity android:name=".GameTwoActivity"
-            android:screenOrientation = "portrait"/>
-        <activity android:name=".GameOneActivity"
-            android:screenOrientation = "portrait"/>
-        <activity android:name=".LeaderBoardActivity"
-            android:screenOrientation = "portrait"/>
-        <activity android:name=".OptionsActivity"
-            android:screenOrientation = "portrait"/>
-        <activity android:name=".ChooseAdventureActivity"
-            android:screenOrientation = "portrait"/>
-        <activity android:name=".MainActivity"
-            android:screenOrientation = "portrait">
+        <activity
+            android:name=".GameThreeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.HybridYourOwnAdventure.NoActionBar"/>
+        <activity
+            android:name=".GameTwoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.HybridYourOwnAdventure.NoActionBar"/>
+        <activity
+            android:name=".GameOneActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.HybridYourOwnAdventure.NoActionBar"/>
+        <activity
+            android:name=".LeaderBoardActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.HybridYourOwnAdventure.NoActionBar"/>
+        <activity
+            android:name=".OptionsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.HybridYourOwnAdventure.NoActionBar"/>
+        <activity
+            android:name=".ChooseAdventureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.HybridYourOwnAdventure.NoActionBar"/>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.HybridYourOwnAdventure.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

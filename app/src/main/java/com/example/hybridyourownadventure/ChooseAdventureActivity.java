@@ -46,8 +46,11 @@ public class ChooseAdventureActivity extends AppCompatActivity
         //Initially setting it to be 0 because that will be our default starting dialogue state
         setUIDialogue(DataHolder.getInstance().getCurrentDialogueIndex());
 
-        //Start playing the Audio
-        startAudioService();
+        //Start playing the Audio, if the user has not muted it via the Options
+        if(!DataHolder.getInstance().getMuteAudio())
+        {
+            startAudioService();
+        }
     }
 
     public void onClickAdventureOption(View view)
@@ -145,8 +148,6 @@ public class ChooseAdventureActivity extends AppCompatActivity
         int sessionsPlayed = sharedPreferences.getInt(Pref_sessionsPlayed,0);
         sessionsPlayed++;
         editor.putInt(Pref_sessionsPlayed,sessionsPlayed);
-        //editor.commit();
-        //TODO: Verify Apply works better than commit
         editor.apply();
     }
 
@@ -166,5 +167,15 @@ public class ChooseAdventureActivity extends AppCompatActivity
     public void stopAudioService()
     {
         stopService(new Intent(this,AudioService.class));
+    }
+
+    public void onClickMainMenu(View view)
+    {
+        loadActivity(MainActivity.class);
+    }
+
+    public void onClickOptions(View view)
+    {
+        loadActivity(OptionsActivity.class);
     }
 }

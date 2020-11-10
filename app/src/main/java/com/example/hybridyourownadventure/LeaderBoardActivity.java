@@ -10,8 +10,11 @@
 
 package com.example.hybridyourownadventure;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import java.util.ArrayList;
@@ -44,5 +47,22 @@ public class LeaderBoardActivity extends AppCompatActivity
         //Display the stats, we need an adapter to do that
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,tempStringArray);
         listView.setAdapter(adapter);
+    }
+
+    public void onClickMainMenu(View view)
+    {
+        loadActivity(MainActivity.class);
+    }
+
+    public void onClickOptions(View view)
+    {
+        loadActivity(OptionsActivity.class);
+    }
+
+    //Loads the activity via intent
+    private void loadActivity(Class activity)
+    {
+        Intent activityToStart = new Intent(this,activity);
+        startActivity(activityToStart);
     }
 }
