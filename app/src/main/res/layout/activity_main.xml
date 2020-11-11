@@ -1,66 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".MainActivity"
-    android:weightSum="2">
-
-    <LinearLayout
-        android:id="@+id/linearLayout_mainMenuText"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:orientation="vertical"
-        android:layout_gravity="center"
-        android:layout_weight="0.5">
+    android:weightSum="4.5"
+    android:background="@color/yellow_darker">
 
     <TextView
         android:id="@+id/text_mainMenuHeader"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         android:text="@string/text_mainMenuHeader"
         android:textSize="30sp"
         android:textColor="@color/brown_medium"
-        android:background="@color/yellow_darker"
-        android:gravity="center"/>
+        android:background="@color/yellow_lighter"
+        android:gravity="center"
+        android:layout_weight="0.5" />
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout_mainMenuButtons"
+    <Button
+        android:id="@+id/button_playGame"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:orientation="vertical"
-        android:layout_gravity="center"
-        android:layout_weight="1.5"
-        android:background="@color/yellow_medium">
+        android:text="@string/button_playGame"
+        android:onClick="onClickMenuOption"
+        style="@style/ButtonStyle_darkText_LightButton"
+        android:layout_weight="1"
+        app:strokeColor="@color/brown_medium"
+        app:strokeWidth="5dp"/>
 
-        <Button
-            android:id="@+id/button_playGame"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/button_playGame"
-            android:onClick="onClickMenuOption"
-            style="@style/ButtonStyle_darkText_LightButton"/>
+    <Button
+        android:id="@+id/button_options"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="@string/button_options"
+        android:onClick="onClickMenuOption"
+        style="@style/ButtonStyle_darkText_LightButton"
+        android:layout_weight="1"
+        app:strokeColor="@color/brown_medium"
+        app:strokeWidth="5dp"/>
 
-        <Button
-            android:id="@+id/button_options"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/button_options"
-            android:onClick="onClickMenuOption"
-            style="@style/ButtonStyle_darkText_LightButton"/>
+    <Button
+        android:id="@+id/button_leaderboards"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="@string/button_leaderBoards"
+        android:onClick="onClickMenuOption"
+        style="@style/ButtonStyle_darkText_LightButton"
+        android:layout_weight="1"
+        app:strokeColor="@color/brown_medium"
+        app:strokeWidth="5dp"/>
 
-        <Button
-            android:id="@+id/button_leaderboards"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/button_leaderBoards"
-            android:onClick="onClickMenuOption"
-            style="@style/ButtonStyle_darkText_LightButton"/>
-
-    </LinearLayout>
+    <TextView
+        android:id="@+id/text_mainMenuFooter"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="@string/text_mainMenuFooter"
+        android:textSize="20sp"
+        android:textColor="@color/brown_medium"
+        android:background="@color/yellow_lighter"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp" />
 
 </LinearLayout>

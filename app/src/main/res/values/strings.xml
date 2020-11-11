@@ -11,6 +11,7 @@
     <string name="button_playGame">Play Game</string>
     <string name="button_options">Options</string>
     <string name="button_leaderBoards">LeaderBoards</string>
+    <string name="text_mainMenuFooter">WildWest Story V1.0, by Dustin Kaban 2020</string>
 
     <!-- Choose Adventure Strings -->
     <string name="button_mainMenu">Main Menu</string>
@@ -22,7 +23,7 @@
     <string name="button_option3">Option 3</string>
 
     <!-- LeaderBoard Strings -->
-    <string name="text_leaderBoardHeader">Statistics</string>
+    <string name="text_leaderBoardHeader">LeaderBoards</string>
     <string name="text_leaderBoardFooter">Thanks for playing!</string>
 
     <!-- Options Strings -->

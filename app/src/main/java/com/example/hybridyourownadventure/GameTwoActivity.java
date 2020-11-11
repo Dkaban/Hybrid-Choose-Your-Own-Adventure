@@ -49,14 +49,14 @@ public class GameTwoActivity extends AppCompatActivity
 
     public void onClickAnswer(View view)
     {
-        //When the user presses the Check Answer button
-        //If the answer inputted is correct, they've won the game!!
+        //Used to track if we've found the correct answer or not, so the finally doesn't trigger
+        boolean foundCorrectAnswer = false;
         try
         {
-            if(mathProblems[chosenIndex].getMathAnswer() == Integer.parseInt(answerEditText.getText().toString()))
-            {
-                loadActivity(EndGameActivity.class);
-            }
+            //Returns a boolean to see if we've found the correct answer
+            foundCorrectAnswer = checkForCorrectAnswer();
+            //We want to load the EndGameActivity class since the user got the answer correct
+            loadActivity(EndGameActivity.class);
         }
         catch (Exception e)
         {
@@ -64,19 +64,37 @@ public class GameTwoActivity extends AppCompatActivity
         }
         finally
         {
-            if(chancesLeft <= 0)
+            //We want to reduce their number of chances or end the game regardless
+            if(!foundCorrectAnswer)
             {
-                //Set GameOver to true so we know the player lost the game in the EndGameActivity
-                DataHolder.getInstance().setGameOver(true);
-                //GAME OVER! FAIL
-                loadActivity(EndGameActivity.class);
+                checkForGameOver();
             }
-            else
-            {
-                //Failed to parse the integer, we want to remove a chance
-                chancesLeft--;
-                Toast.makeText(this, "Incorrect! You have " + chancesLeft + " chance(s) to get the answer correct before game over.", Toast.LENGTH_SHORT).show();
-            }
+        }
+    }
+
+    private boolean checkForCorrectAnswer()
+    {
+        if(mathProblems[chosenIndex].getMathAnswer() == Integer.parseInt(answerEditText.getText().toString()))
+        {
+            return true;
+        }
+        return false;
+    }
+
+    private void checkForGameOver()
+    {
+        if(chancesLeft > 0)
+        {
+            //Failed to parse the integer, we want to remove a chance
+            chancesLeft--;
+            Toast.makeText(this, "Incorrect! You have " + chancesLeft + " chance(s) to get the answer correct before game over.", Toast.LENGTH_SHORT).show();
+        }
+        else
+        {
+            //Set GameOver to true so we know the player lost the game in the EndGameActivity
+            DataHolder.getInstance().setGameOver(true);
+            //GAME OVER! FAIL
+            loadActivity(EndGameActivity.class);
         }
     }
 
@@ -101,6 +119,7 @@ public class GameTwoActivity extends AppCompatActivity
 
     private int pickRandomQuestion()
     {
+        //Returns a random number between 0 and the mathProblems array size
         return new Random().nextInt(mathProblems.length-1);
     }
 

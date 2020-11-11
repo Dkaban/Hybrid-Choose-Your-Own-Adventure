@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".GameThreeActivity"
     android:weightSum="3"
@@ -24,7 +24,7 @@
         android:id="@+id/text_questionGameThree"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:text="@string/text_questionGameTwo"
+        android:text="@string/text_questionGameThree"
         android:textSize="30sp"
         android:textColor="@color/brown_medium"
         android:background="@color/yellow_darker"
@@ -39,12 +39,14 @@
         android:layout_weight="0.5"/>
 
     <Button
-        android:id="@+id/button_gameTwoAnswer"
+        android:id="@+id/button_gameThreeAnswer"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:text="@string/button_gameThreeAnswerButton"
         style="@style/ButtonStyle_darkText_LightButton"
         android:onClick="onClickAnswer"
-        android:layout_weight="0.5"/>
+        android:layout_weight="0.5"
+        app:strokeColor="@color/brown_medium"
+        app:strokeWidth="5dp"/>
 
 </LinearLayout>

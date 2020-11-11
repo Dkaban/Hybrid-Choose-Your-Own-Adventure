@@ -71,7 +71,7 @@ You defeated all the bandits and the elderly man looks familiar now.
 Talk to elderly man
 Tackle elderly man
 There were still more bandits, you and the elderly man were defeated.
-Restat Game
+Restart Game
 Go to LeaderBoards
 You tackled the old man.  He winces, but looks at you, and says, Sunny?
 Grandpa

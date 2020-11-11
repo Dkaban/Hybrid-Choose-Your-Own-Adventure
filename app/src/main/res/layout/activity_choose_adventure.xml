@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".ChooseAdventureActivity"
     android:weightSum="4"
@@ -22,22 +22,26 @@
         <Button
             android:id="@+id/button_mainMenu"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="80dp"
             style="@style/ButtonStyle_darkText_LightButton"
             android:onClick="onClickMainMenu"
             android:text="@string/button_mainMenu"
             android:layout_weight="1"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            app:strokeColor="@color/brown_medium"
+            app:strokeWidth="2dp"/>
 
         <Button
             android:id="@+id/button_options"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="80dp"
             style="@style/ButtonStyle_darkText_LightButton"
             android:onClick="onClickOptions"
             android:text="@string/button_options"
             android:layout_weight="1"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            app:strokeColor="@color/brown_medium"
+            app:strokeWidth="2dp"/>
 
     </LinearLayout>
 
@@ -61,7 +65,9 @@
         android:textColor="@color/brown_medium"
         android:background="@color/yellow_darker"
         android:gravity="center"
-        android:layout_weight="1.5"/>
+        android:layout_weight="1.5"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"/>
 
     <Button
         android:id="@+id/button_option1"
@@ -70,7 +76,9 @@
         style="@style/ButtonStyle_darkText_LightButton"
         android:onClick="onClickAdventureOption"
         android:text="@string/button_option1"
-        android:layout_weight="0.75"/>
+        android:layout_weight="0.75"
+        app:strokeColor="@color/brown_medium"
+        app:strokeWidth="5dp"/>
 
     <Button
         android:id="@+id/button_option2"
@@ -79,6 +87,8 @@
         style="@style/ButtonStyle_darkText_LightButton"
         android:onClick="onClickAdventureOption"
         android:text="@string/button_option2"
-        android:layout_weight="0.75"/>
+        android:layout_weight="0.75"
+        app:strokeColor="@color/brown_medium"
+        app:strokeWidth="5dp"/>
 
 </LinearLayout>

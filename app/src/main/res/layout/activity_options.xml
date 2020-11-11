@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".OptionsActivity"
     android:weightSum="4"
@@ -15,29 +15,33 @@
         android:layout_height="0dp"
         android:orientation="horizontal"
         android:layout_gravity="center"
-        android:layout_weight="0.5"
+        android:layout_weight="0.6"
         android:background="@color/yellow_darker"
         android:weightSum="2">
 
         <Button
             android:id="@+id/button_mainMenu"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="80dp"
             style="@style/ButtonStyle_darkText_LightButton"
             android:onClick="onClickMainMenu"
             android:text="@string/button_mainMenu"
             android:layout_weight="1"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            app:strokeColor="@color/brown_medium"
+            app:strokeWidth="2dp"/>
 
         <Button
             android:id="@+id/button_options"
             android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_height="80dp"
             style="@style/ButtonStyle_darkText_LightButton"
             android:onClick="onClickLeaderBoards"
             android:text="@string/button_leaderBoards"
             android:layout_weight="1"
-            android:textSize="20sp"/>
+            android:textSize="20sp"
+            app:strokeColor="@color/brown_medium"
+            app:strokeWidth="2dp"/>
 
     </LinearLayout>
 
@@ -45,12 +49,12 @@
         android:id="@+id/text_optionsHeader"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:text="@string/text_optionsHeader"
-        android:textSize="30sp"
-        android:textColor="@color/brown_medium"
+        android:layout_weight="0.5"
         android:background="@color/yellow_lighter"
         android:gravity="center"
-        android:layout_weight="1"/>
+        android:text="@string/text_optionsHeader"
+        android:textColor="@color/brown_medium"
+        android:textSize="30sp" />
 
     <Button
         android:id="@+id/button_muteAudio"
@@ -60,17 +64,21 @@
         android:layout_weight="0.5"
         android:gravity="center"
         android:text="@string/button_muteAudio"
-        android:onClick="onClickMuteAudio" />
+        android:onClick="onClickMuteAudio"
+        app:strokeColor="@color/brown_medium"
+        app:strokeWidth="5dp"/>
 
     <Button
         android:id="@+id/button_clearSavedData"
+        style="@style/ButtonStyle_darkText_LightButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/ButtonStyle_darkText_LightButton"
         android:layout_weight="0.5"
         android:gravity="center"
+        android:onClick="onClickClearSavedData"
         android:text="@string/button_clearSavedData"
-        android:onClick="onClickClearSavedData" />
+        app:strokeColor="@color/brown_medium"
+        app:strokeWidth="5dp"/>
 
     <TextView
         android:id="@+id/text_optionsFooter"
