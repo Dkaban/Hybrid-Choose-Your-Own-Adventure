@@ -77,22 +77,22 @@ public class ChooseAdventureActivity extends AppCompatActivity
         if(dialogueIndex == 1000)
         {
             //load the first game activity
-            loadActivity(GameOneActivity.class);
+            DataHolder.getInstance().loadHandler.loadActivity(this,GameOneActivity.class);
         }
         else if(dialogueIndex == 2000)
         {
             //load the second game activity
-            loadActivity(GameTwoActivity.class);
+            DataHolder.getInstance().loadHandler.loadActivity(this,GameTwoActivity.class);
         }
         else if(dialogueIndex == 3000)
         {
             //load the third game activity
-            loadActivity(GameThreeActivity.class);
+            DataHolder.getInstance().loadHandler.loadActivity(this,GameThreeActivity.class);
         }
         else if(dialogueIndex == 998)
         {
             //load the leaderBoards activity
-            loadActivity(LeaderBoardActivity.class);
+            DataHolder.getInstance().loadHandler.loadActivity(this,LeaderBoardActivity.class);
         }
         else
         {
@@ -132,13 +132,6 @@ public class ChooseAdventureActivity extends AppCompatActivity
         setUIDialogue(index);
     }
 
-    //Loads the activity via intent
-    private void loadActivity(Class activity)
-    {
-        Intent activityToStart = new Intent(this,activity);
-        startActivity(activityToStart);
-    }
-
     private void saveStats()
     {
         String Pref_sessionsPlayed = "SessionsPlayed";
@@ -171,11 +164,11 @@ public class ChooseAdventureActivity extends AppCompatActivity
 
     public void onClickMainMenu(View view)
     {
-        loadActivity(MainActivity.class);
+        DataHolder.getInstance().loadHandler.loadActivity(this,MainActivity.class);
     }
 
     public void onClickOptions(View view)
     {
-        loadActivity(OptionsActivity.class);
+        DataHolder.getInstance().loadHandler.loadActivity(this,OptionsActivity.class);
     }
 }

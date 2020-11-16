@@ -12,7 +12,6 @@
 package com.example.hybridyourownadventure;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
@@ -41,16 +40,15 @@ public class MainActivity extends AppCompatActivity
         if(DataHolder.getInstance().dialogueList.isEmpty())
         {
             //Populate the dialogue array via a text file
-            DataHolder.getInstance().populateDialogueArray(this);
             //Assign the dialogue tree values so we know what dialogue takes you where
-            DataHolder.getInstance().setDialogueOptionIndexes();
+            DataHolder.getInstance().loadDialogueData(this);
         }
 
         //If it's the first time we're playing, we want to display the copyright / disclaimer page
         boolean firstPlay= false;
         if(!sharedPreferences.getBoolean(PREF_NAME,firstPlay))
         {
-            loadActivity(SplashActivity.class);
+            DataHolder.getInstance().loadHandler.loadActivity(this,SplashActivity.class);
         }
     }
 
@@ -60,23 +58,16 @@ public class MainActivity extends AppCompatActivity
         switch(view.getId())
         {
             case R.id.button_playGame:
-                loadActivity(ChooseAdventureActivity.class);
+                DataHolder.getInstance().loadHandler.loadActivity(this,ChooseAdventureActivity.class);
                 break;
 
             case R.id.button_options:
-                loadActivity(OptionsActivity.class);
+                DataHolder.getInstance().loadHandler.loadActivity(this,OptionsActivity.class);
                 break;
 
             case R.id.button_leaderboards:
-                loadActivity(LeaderBoardActivity.class);
+                DataHolder.getInstance().loadHandler.loadActivity(this,LeaderBoardActivity.class);
                 break;
         }
-    }
-
-    //Loads the activity via intent
-    private void loadActivity(Class activity)
-    {
-        Intent activityToStart = new Intent(this,activity);
-        startActivity(activityToStart);
     }
 }

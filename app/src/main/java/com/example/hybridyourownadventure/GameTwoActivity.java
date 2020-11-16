@@ -56,7 +56,7 @@ public class GameTwoActivity extends AppCompatActivity
             //Returns a boolean to see if we've found the correct answer
             foundCorrectAnswer = checkForCorrectAnswer();
             //We want to load the EndGameActivity class since the user got the answer correct
-            loadActivity(EndGameActivity.class);
+            DataHolder.getInstance().loadHandler.loadActivity(this,EndGameActivity.class);
         }
         catch (Exception e)
         {
@@ -94,7 +94,7 @@ public class GameTwoActivity extends AppCompatActivity
             //Set GameOver to true so we know the player lost the game in the EndGameActivity
             DataHolder.getInstance().setGameOver(true);
             //GAME OVER! FAIL
-            loadActivity(EndGameActivity.class);
+            DataHolder.getInstance().loadHandler.loadActivity(this,EndGameActivity.class);
         }
     }
 
@@ -121,12 +121,5 @@ public class GameTwoActivity extends AppCompatActivity
     {
         //Returns a random number between 0 and the mathProblems array size
         return new Random().nextInt(mathProblems.length-1);
-    }
-
-    //Loads the activity via intent
-    private void loadActivity(Class activity)
-    {
-        Intent activityToStart = new Intent(this,activity);
-        startActivity(activityToStart);
     }
 }

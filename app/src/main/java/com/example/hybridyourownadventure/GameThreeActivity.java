@@ -56,7 +56,7 @@ public class GameThreeActivity extends AppCompatActivity
         //If the answer inputted is correct, they've won the game!!
         if(wordProblems[chosenIndex].getWordAnswer().toLowerCase().equals(answerEditText.getText().toString().toLowerCase()))
         {
-            loadActivity(EndGameActivity.class);
+            DataHolder.getInstance().loadHandler.loadActivity(this,EndGameActivity.class);
         }
         else if(chancesLeft > 0)
         {
@@ -68,7 +68,7 @@ public class GameThreeActivity extends AppCompatActivity
             //Set GameOver to true so we know the player lost the game in the EndGameActivity
             DataHolder.getInstance().setGameOver(true);
             //GAME OVER! FAIL
-            loadActivity(EndGameActivity.class);
+            DataHolder.getInstance().loadHandler.loadActivity(this,EndGameActivity.class);
         }
     }
 
@@ -94,12 +94,5 @@ public class GameThreeActivity extends AppCompatActivity
     private int pickRandomQuestion()
     {
         return new Random().nextInt(wordProblems.length-1);
-    }
-
-    //Loads the activity via intent
-    private void loadActivity(Class activity)
-    {
-        Intent activityToStart = new Intent(this,activity);
-        startActivity(activityToStart);
     }
 }

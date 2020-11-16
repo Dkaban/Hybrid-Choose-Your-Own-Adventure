@@ -62,14 +62,7 @@ public class EndGameActivity extends AppCompatActivity
         DataHolder.getInstance().setGameOver(false);
 
         //Load the game back to the beginning again
-        loadActivity(ChooseAdventureActivity.class);
-    }
-
-    //Loads the activity via intent
-    private void loadActivity(Class activity)
-    {
-        Intent activityToStart = new Intent(this,activity);
-        startActivity(activityToStart);
+        DataHolder.getInstance().loadHandler.loadActivity(this,ChooseAdventureActivity.class);
     }
 
     @Override

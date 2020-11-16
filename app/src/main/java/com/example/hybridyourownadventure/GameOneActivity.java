@@ -90,14 +90,7 @@ public class GameOneActivity extends AppCompatActivity
             DataHolder.getInstance().setCurrentDialogueIndex(13);
         }
 
-        loadActivity(ChooseAdventureActivity.class);
-    }
-
-    //Loads the activity via intent
-    private void loadActivity(Class activity)
-    {
-        Intent activityToStart = new Intent(this,activity);
-        startActivity(activityToStart);
+        DataHolder.getInstance().loadHandler.loadActivity(this,ChooseAdventureActivity.class);
     }
 
     @Override

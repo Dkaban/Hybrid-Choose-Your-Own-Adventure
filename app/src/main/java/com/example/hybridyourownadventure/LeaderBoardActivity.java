@@ -51,18 +51,11 @@ public class LeaderBoardActivity extends AppCompatActivity
 
     public void onClickMainMenu(View view)
     {
-        loadActivity(MainActivity.class);
+        DataHolder.getInstance().loadHandler.loadActivity(this,MainActivity.class);
     }
 
     public void onClickOptions(View view)
     {
-        loadActivity(OptionsActivity.class);
-    }
-
-    //Loads the activity via intent
-    private void loadActivity(Class activity)
-    {
-        Intent activityToStart = new Intent(this,activity);
-        startActivity(activityToStart);
+        DataHolder.getInstance().loadHandler.loadActivity(this,OptionsActivity.class);
     }
 }

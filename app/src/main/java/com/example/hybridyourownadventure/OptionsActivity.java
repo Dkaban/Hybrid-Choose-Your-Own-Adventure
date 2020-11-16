@@ -69,18 +69,11 @@ public class OptionsActivity extends AppCompatActivity
 
     public void onClickMainMenu(View view)
     {
-        loadActivity(MainActivity.class);
+        DataHolder.getInstance().loadHandler.loadActivity(this,MainActivity.class);
     }
 
     public void onClickLeaderBoards(View view)
     {
-        loadActivity(LeaderBoardActivity.class);
-    }
-
-    //Loads the activity via intent
-    private void loadActivity(Class activity)
-    {
-        Intent activityToStart = new Intent(this,activity);
-        startActivity(activityToStart);
+        DataHolder.getInstance().loadHandler.loadActivity(this,LeaderBoardActivity.class);
     }
 }
