@@ -21,7 +21,6 @@
             android:name=".AudioService"
             android:enabled="true"
             android:exported="true" />
-
         <activity
             android:name=".GameThreeActivity"
             android:screenOrientation="portrait"

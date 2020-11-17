@@ -109,11 +109,11 @@ public class GameTwoActivity extends AppCompatActivity
     {
         mathProblems = new Problem[3];
         //Doing this manually, we could load a text file to populate this list too.
-        Problem mp = new Problem("What is 1 + 1?","2");
+        Problem mp = new Problem("Cardinality of B = {1,2,3,5}?","4");
         mathProblems[0] = mp;
-        mp = new Problem("2 + 2","4");
+        mp = new Problem("28 * 5 + 4 - 6?","138");
         mathProblems[1] = mp;
-        mp = new Problem("3 + 3","6");
+        mp = new Problem("How many ways can COMPUTER be arranged in a row?","40320");
         mathProblems[2] = mp;
     }
 
