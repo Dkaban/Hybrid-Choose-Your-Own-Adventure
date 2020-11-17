@@ -18,3 +18,6 @@ The user navigates the story by making choices and is proposed with mini games a
 - Twinery (for story creation) - https://twinery.org/
 - Colors.co (for color palette) - https://coolors.co/generate
 - The music (Royalty Free) - https://www.dl-sounds.com/royalty-free/brighten-up-loop/
+
+#### Screenshots
+![alt text](https://github.com/Dkaban/Hybrid-Choose-Your-Own-Adventure/blob/master/SS1_MainMenu.jpg?raw=true)
