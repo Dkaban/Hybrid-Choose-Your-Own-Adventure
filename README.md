@@ -2,12 +2,12 @@
 
 ## Platform: Android
 ## IDE: Android Studio
-This game was created using Android Studio and it s choose your own story type of game.
+This game was created using Android Studio.
 The user navigates the story by making choices and is proposed with mini games along the way.
 
 ### Functionality
 - Wild West theme
-- Branching Dialogue Tree
+- Branching Dialogue Tree (Dialogue is limited, but can be expanded easily)
 - Leaderboards for Sessions Played Tracking
 - In-Game Music
 - 3 mini games
