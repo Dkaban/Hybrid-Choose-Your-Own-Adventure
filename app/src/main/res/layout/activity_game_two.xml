@@ -36,7 +36,9 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:hint="@string/text_hint_mathEntryAnswers"
-        android:layout_weight="0.5"/>
+        android:layout_weight="0.5"
+        android:inputType="number"
+        android:importantForAutofill="no" />
 
     <Button
         android:id="@+id/button_gameTwoAnswer"
