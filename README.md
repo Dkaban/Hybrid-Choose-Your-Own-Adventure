@@ -20,9 +20,7 @@ The user navigates the story by making choices and is proposed with mini games a
 - The music (Royalty Free) - https://www.dl-sounds.com/royalty-free/brighten-up-loop/
 
 #### Screenshots
-##### Main Menu & Gameplay
-Main Menu: ![Main Menu](https://github.com/Dkaban/Hybrid-Choose-Your-Own-Adventure/blob/master/SS1_MainMenu.jpg?raw=true)
-Gameplay: ![Gameplay](https://github.com/Dkaban/Hybrid-Choose-Your-Own-Adventure/blob/master/SS2_Gameplay.jpg?raw=true)
-
+![Main Menu](https://github.com/Dkaban/Hybrid-Choose-Your-Own-Adventure/blob/master/SS1_MainMenu.jpg?raw=true)&nbsp;&nbsp;&nbsp;
+![Gameplay](https://github.com/Dkaban/Hybrid-Choose-Your-Own-Adventure/blob/master/SS2_Gameplay.jpg?raw=true)
 ![Options](https://github.com/Dkaban/Hybrid-Choose-Your-Own-Adventure/blob/master/SS3_Options.jpg?raw=true)
 ![LeaderBoard](https://github.com/Dkaban/Hybrid-Choose-Your-Own-Adventure/blob/master/SS4_Leaderboards.jpg?raw=true)
